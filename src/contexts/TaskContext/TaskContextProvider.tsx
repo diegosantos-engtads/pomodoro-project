@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer } from 'react';
+import { useEffect, useReducer } from 'react';
 import { TaskContext } from './TaskContext';
 import { initialTaskState } from './initialTaskState';
 import { taskReducer } from './taskReducer';
