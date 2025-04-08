@@ -9,6 +9,7 @@ import { getNextCycleType } from '../../utils/getNextCycleType';
 import { Tips } from '../Tips';
 import { TaskModel } from '../../modules/TaskModel';
 import { TaskActionsTypes } from '../../contexts/TaskContext/taskActions';
+import { showMessage } from '../adapters/showMessage';
 
 export function MainForm() {
   const { state, dispatch } = useTaskContext();
@@ -19,13 +20,14 @@ export function MainForm() {
 
   function handleCreateNewTask(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    showMessage.dismiss();
 
     if (!taskNameInput.current) return;
 
     const taskName = taskNameInput.current.value.trim();
 
     if (!taskName) {
-      alert('Você precisa digitar uma tarefa');
+      showMessage.warn('Digite uma tarefa');
       return;
     }
 
@@ -40,9 +42,12 @@ export function MainForm() {
     };
 
     dispatch({ type: TaskActionsTypes.START_TASK, payload: newTask });
+    showMessage.info('Tarefa Iniciada');
   }
 
   function handleInterruptedTask() {
+    showMessage.dismiss();
+    showMessage.error('Tarefa Interrompida');
     dispatch({ type: TaskActionsTypes.INTERRUPT_TASK });
   }
 
@@ -78,6 +83,7 @@ export function MainForm() {
             title='Iniciar nova tarefa'
             type='submit'
             icon={<PlayCircleIcon />}
+            key='btn-play'
           />
         ) : (
           <DefaultButton
@@ -87,6 +93,7 @@ export function MainForm() {
             color='red'
             icon={<StopCircleIcon />}
             onClick={handleInterruptedTask}
+            key='btn-stop'
           />
         )}
       </div>
