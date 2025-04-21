@@ -14,21 +14,15 @@
 
 ---
 
-## 📸 Demonstração
-
-### 🏠 Página Inicial e Criar Primeira Tarefa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🧾 Histórico e Exclusão de Tarefas
-
-<img src="public/images/home.gif" width="300px" alt="Página Inicial" /> <img src="public/images/historico.gif" width="300px" alt="Histórico" />
-
-<br/><br/>
-
-### ⚙️ Configurações de Tempo de Cada Ciclo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌗 Modo Claro e Técnica Pomodoro
-
-<img src="public/images/configuracoes.gif" width="300px" alt="Configurações" /> <img src="public/images/modo-claro.gif" width="300px" alt="Modo Claro" />
+## Demonstração
+  <img src="public/images/home.gif" width="250px" alt="Página Inicial" style="margin-right: 20px;" />
+  <img src="public/images/historico.gif" width="250px" alt="Histórico" style="margin-right: 20px;" />
+  <img src="public/images/configuracoes.gif" width="250px" alt="Configurações" style="margin-right: 20px;" />
+  <img src="public/images/modo-claro.gif" width="250px" alt="Modo Claro" />
 
 ---
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - Temporizador Pomodoro com três modos: foco, pausa curta e pausa longa
 - Configuração personalizada de duração dos ciclos
@@ -41,7 +35,7 @@
 
 ---
 
-## 🧰 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 <p align="left">
   <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" />
