@@ -1,7 +1,8 @@
-<div align="center">
+<p align="center">
   <img src="public/images/favicon/favicon-96x96.png" width="80" alt="Logo Chronos Pomodoro" />
-  <h1>Chronos Pomodoro</h1>
-</div>
+</p>
+
+<h1 align="center">Chronos Pomodoro</h1>
 
 **Chronos Pomodoro** é um aplicativo de produtividade baseado na Técnica Pomodoro. Ele permite que você alterne entre ciclos de foco e descanso de forma eficiente, com interface clara, responsiva e configurável.
 
@@ -15,52 +16,15 @@
 
 ## 📸 Demonstração
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+### 🏠 Página Inicial e Criar Primeira Tarefa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🧾 Histórico e Exclusão de Tarefas
 
-  <div style="flex: 1 1 300px; max-width: 300px; text-align: left;">
-    <div style="padding: 10px 0;">
-      <strong>🏠 Página Inicial e Criar Primeira Tarefa</strong>
-    </div>
-    <img src="public/images/home.gif" alt="Página Inicial" style="width: 100%; border-radius: 8px;" />
-  </div>
+<img src="public/images/home.gif" width="300px" alt="Página Inicial" /> <img src="public/images/historico.gif" width="300px" alt="Histórico" />
 
-  <div style="flex: 1 1 300px; max-width: 300px; text-align: left;">
-    <div style="padding: 10px 0;">
-      <strong>🧾 Histórico e Exclusão de Tarefas</strong>
-    </div>
-    <img src="public/images/historico.gif" alt="Histórico" style="width: 100%; border-radius: 8px;" />
-  </div>
+<br/><br/>
 
-</div>
+### ⚙️ Configurações de Tempo de Cada Ciclo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌗 Modo Claro e Técnica Pomodoro
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 10px;">
-
-  <div style="flex: 1 1 300px; max-width: 300px; text-align: left;">
-    <div style="padding: 10px 0;">
-      <strong>⚙️ Configurações de Tempo de Cada Ciclo</strong>
-    </div>
-    <img src="public/images/configuracoes.gif" alt="Configurações" style="width: 100%; border-radius: 8px;" />
-  </div>
-
-  <div style="flex: 1 1 300px; max-width: 300px; text-align: left;">
-    <div style="padding: 10px 0;">
-      <strong>🌗 Modo Claro e Técnica Pomodoro</strong>
-    </div>
-    <img src="public/images/modo-claro.gif" alt="Modo Claro" style="width: 100%; border-radius: 8px;" />
-  </div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
+<img src="public/images/configuracoes.gif" width="300px" alt="Configurações" /> <img src="public/images/modo-claro.gif" width="300px" alt="Modo Claro" />
 
 ---
 
