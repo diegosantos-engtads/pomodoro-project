@@ -15,10 +15,12 @@
 ---
 
 ## Demonstração
-  <img src="public/images/home.gif" width="250px" alt="Página Inicial" style="margin-right: 20px;" />
-  <img src="public/images/historico.gif" width="250px" alt="Histórico" style="margin-right: 20px;" />
-  <img src="public/images/configuracoes.gif" width="250px" alt="Configurações" style="margin-right: 20px;" />
-  <img src="public/images/modo-claro.gif" width="250px" alt="Modo Claro" />
+  <div style="display: flex;">
+    <img src="public/images/home.gif" width="250px" alt="Página Inicial" style="margin-right: 20px;" />
+    <img src="public/images/historico.gif" width="250px" alt="Histórico" style="margin-right: 20px;" />
+    <img src="public/images/configuracoes.gif" width="250px" alt="Configurações" style="margin-right: 20px;" />
+    <img src="public/images/modo-claro.gif" width="250px" alt="Modo Claro" />
+  </div>
 
 ---
 
