@@ -15,10 +15,10 @@
 ---
 
 ## Demonstração
-  <div style="display: flex; gap: 20px;">
-    <img src="public/images/home.gif" width="230px" alt="Página Inicial" style="margin-right: 10px;" />
-    <img src="public/images/historico.gif" width="230px" alt="Histórico" style="margin-right: 10px;" />
-    <img src="public/images/configuracoes.gif" width="230px" alt="Configurações" style="margin-right: 20px;" />
+  <div style="display: flex; gap: 20px; justify-content: center;">
+    <img src="public/images/home.gif" width="230px" alt="Página Inicial" />
+    <img src="public/images/historico.gif" width="230px" alt="Histórico" />
+    <img src="public/images/configuracoes.gif" width="230px" alt="Configurações" />
     <img src="public/images/modo-claro.gif" width="230px" alt="Modo Claro" />
   </div>
 
