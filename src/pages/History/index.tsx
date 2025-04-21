@@ -9,11 +9,13 @@ import { formatDate } from '../../utils/formatDate';
 import { getTaskStatus } from '../../utils/getTaskStatus';
 import { useEffect, useState } from 'react';
 import { sortTasks, SortTasksOptions } from '../../utils/sortTasks';
+import { showMessage } from '../../components/adapters/showMessage';
 import { TaskActionsTypes } from '../../contexts/TaskContext/taskActions';
 
 export function History() {
   const { state, dispatch } = useTaskContext();
   const hasTasks = state.tasks.length > 0;
+  const [confirmCleatHistory, setConfirmClearHistory] = useState(false);
   const [sortTasksOptions, setSortTaskOptions] = useState<SortTasksOptions>(
     () => {
       return {
@@ -45,9 +47,29 @@ export function History() {
       }),
     }));
   }, [state.tasks]);
-  function handrleResetHistory() {
-    if (!confirm('Tem certeza que deseja apagar o histórico')) return;
+
+  useEffect(() => {
+    if (!confirmCleatHistory) return;
+    setConfirmClearHistory(false);
+
     dispatch({ type: TaskActionsTypes.RESET_STATE });
+  }, [confirmCleatHistory, dispatch]);
+
+  useEffect(() => {
+    return () => {
+      showMessage.dismiss();
+    };
+  }, []);
+
+  useEffect(() => {
+    document.title = 'Histórico - Chronos';
+  }, []);
+
+  function handrleResetHistory() {
+    showMessage.dismiss();
+    showMessage.confirm('Tem Certeza?', confirmation => {
+      setConfirmClearHistory(confirmation);
+    });
   }
   return (
     <MainTemplate>
